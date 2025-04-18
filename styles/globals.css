@@ -16,3 +16,34 @@ body {
   font-family: 'Outfit';font-size: 22px;
 
 }
+
+section {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.bigme {
+  size: 20px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #F2AA4C;
+  z-index: 100;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2x 4px rgba(0,0,0,0.1);
+}
+
+.navlist {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
