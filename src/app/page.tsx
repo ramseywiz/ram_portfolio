@@ -4,7 +4,7 @@ export default function Home() {
       <main>
         <section id="home" className="neighbor fade-in fade-in-delay-1">
           <h1>Greetings, fellow traveler!</h1>
-          <p>I'm Ramsey, a sophmore at the University of Houston. I'm a full-stack developer. Outside of webdev, I like hiking, going to the gym, and playing video games! You can find my projects, resume, and all my links below. Enjoy the stay, young one!</p>
+          <p>I&apos;m Ramsey, a sophmore at the University of Houston. I&apos;m a full-stack developer. Outside of webdev, I like hiking, going to the gym, and playing video games! You can find my projects, resume, and all my links below. Enjoy the stay, young one!</p>
         </section>
         
         <section id="projects" className="neighbor fade-in fade-in-delay-2">
@@ -33,11 +33,11 @@ export default function Home() {
 
             <a href="/resume.pdf" className="contact-item" target="_blank" rel="noopener noreferrer">
               <img src="/resume.png" alt="Resume icon" className="contact-icon"/>
-              <span>Ramsey's Resume</span>
+              <span>Ramsey&apos;s Resume</span>
             </a>
           </div>
         </section>
-        <p className="fade-in fade-in-delay-4"> This site's design is heavily inspired by <a href="https://www.wizard101.com/">Wizard101's landing page.</a></p>
+        <p className="fade-in fade-in-delay-4"> This site&apos;s design is heavily inspired by <a href="https://www.wizard101.com/">Wizard101&apos;s landing page.</a></p>
         <figure>
 
         </figure>
