@@ -1,29 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.fade-in-delay-1 { animation-delay: 0.2s; }
+.fade-in-delay-2 { animation-delay: 0.4s; }
+.fade-in-delay-3 { animation-delay: 0.6s; }
+.fade-in-delay-4 { animation-delay: 0.8s; }
+
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  margin: 0; padding: 0; height: 100%;
 }
 
 body {
-  background-image: url('../public/bg.png');
+  background-image: url('/bg.png');
   background-repeat: repeat-x;
   background-position: top center;
   background-size: auto 100%;
   background-attachment: fixed;
 }
 
-
-
 .scroll-div {
-  height: calc(100vh - 120px);
+  width: 800px;
+  max-height: calc(100vh - 25vh);
+  height: auto;
+  margin: 5vh auto;
+  padding: 2rem;
   overflow-y: auto;
 
-  padding: 1rem;
-  background-image: url("../public/parch.png");
-  background-size:cover;
+  background-image: url('/parch.png');
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: auto;
+
+  font-family: 'MedievalSharp', cursive;
+  color: #6e3c15;
+  box-shadow: inset 0 0 0 6px rgba(0,0,0,0.3);
+}
+.scroll-div h1,
+.scroll-div h2 {
+  text-shadow: 1px 1px 0 #f5e1a8;
+  margin-bottom: 0.5em;
+}
+.scroll-div h1 {
+   font-size: 2.5rem;
+}
+
+.scroll-div h2 { font-size: 1.8rem; }
+.scroll-div p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+.scroll-div ul {
+  list-style: square inside;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+.scroll-div ul li a {
+  color: #4e381a;
+}
+.scroll-div ul li a:hover {
+  color: #a16b2d;
+}
+
+.scroll-div .project-box {
+  border: 12px solid transparent;
+  padding: .8rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(245,229,168, 0.5);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.scroll-div .project-box a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5a3e1b;
+}
+.scroll-div .project-box a:hover {
+  color: #7e5a27;
+}
+
+/* 1) row container */
+.scroll-div .contact-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 800px;
-  margin: 5vh auto;
+  margin-top: 1em;
+}
+
+/* 2) each icon+text link */
+.scroll-div .contact-links .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #4e381a;
+  background-color: rgba(245,229,168, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.scroll-div .contact-links .contact-item:hover {
+  color: #a16b2d;
+}
+
+/* 3) icon sizing */
+.scroll-div .contact-links .contact-icon {
+  width: 32px;
+  height: 32px;
 }
