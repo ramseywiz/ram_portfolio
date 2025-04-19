@@ -31,7 +31,7 @@ export default function Home() {
               <span>ramchandoklow@gmail.com</span>
             </a>
 
-            <a href="/resume.pdf" className="contact-item" target="_blank" rel="noopener noreferrer">
+            <a href="/resume.pdf" className="contact-item" target="_blank" rel="noopener noreferrer" download>
               <img src="/resume.png" alt="Resume icon" className="contact-icon"/>
               <span>Ramsey&apos;s Resume</span>
             </a>
