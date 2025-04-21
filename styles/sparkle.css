@@ -1,0 +1,29 @@
+@keyframes twink{
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(90deg);
+  }
+  100% {
+    transform: scale(0) rotate(180deg);
+  }
+}
+
+.sparkles-div {
+    position: absolute;
+    pointer-events: none;
+}
+
+.sparkle-svg {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  transform-origin: center center;
+  animation: twink 600ms ease-in-out forwards;
+}
+
+.sparkles-wrapper {
+  position: relative;
+  display: inline-block;
+}

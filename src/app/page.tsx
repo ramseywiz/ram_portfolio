@@ -1,9 +1,13 @@
+import React from "react";
+import Sparkles from "../app/components/sparkles"
+
 export default function Home() {
   return (
     <div className="scroll-div">
+      <Sparkles>
       <main>
         <section id="home" className="neighbor fade-in fade-in-delay-1">
-          <h1>Greetings, fellow traveler!</h1>
+          <h1>Greetings, traveler!</h1>
           <p>I&apos;m Ramsey, a sophmore at the University of Houston. I&apos;m a full-stack developer. Outside of webdev, I like hiking, going to the gym, and playing video games! You can find my projects, resume, and all my links below. Enjoy the stay, young one!</p>
         </section>
         
@@ -38,10 +42,8 @@ export default function Home() {
           </div>
         </section>
         <p className="fade-in fade-in-delay-4"> This site&apos;s design is heavily inspired by <a href="https://www.wizard101.com/">Wizard101&apos;s landing page.</a></p>
-        <figure>
-
-        </figure>
       </main>
+      </Sparkles>
     </div>
   );
 }
