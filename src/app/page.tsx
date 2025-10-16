@@ -8,9 +8,17 @@ export default function Home() {
       <main>
         <section id="home" className="neighbor fade-in fade-in-delay-1">
           <h1>Greetings, traveler!</h1>
-          <p>I&apos;m Ramsey, a sophmore at the University of Houston. I&apos;m a full-stack developer. Outside of webdev, I like hiking, going to the gym, and playing video games! You can find my projects, resume, and all my links below. Enjoy the stay, young one!</p>
+          <p>I&apos;m Ramsey, a junior at the University of Houston. I&apos;m a full-stack developer. Outside of webdev, I like hiking, going to the gym, and playing video games! You can find my projects, resume, and all my links below. Enjoy the stay, young one!</p>
         </section>
         
+        <section id="experience" className="neighbor fade-in fade-in-delay-2">
+          <h2>Experience</h2>
+          <ul>
+            <li className="project-box"><a href="https://www.hcss.com/">HCSS</a> - Software Development Intern | May 2025 - Present<br/><br />
+            Working on really cool stuff for civil construction companies! I use mainly ASP.NET, React, C#, TypeScript, and work with Azure Cosmos, a NoSQL database.</li>
+          </ul>
+        </section>
+
         <section id="projects" className="neighbor fade-in fade-in-delay-2">
           <h2>Projects</h2>
           <ul>
