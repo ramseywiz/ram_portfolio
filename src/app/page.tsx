@@ -8,7 +8,7 @@ export default function Home() {
       <main>
         <section id="home" className="neighbor fade-in fade-in-delay-1">
           <h1>Greetings, traveler!</h1>
-          <p>I&apos;m Ramsey, a junior at the University of Houston. I&apos;m a full-stack developer. Outside of webdev, I like hiking, going to the gym, and playing video games! You can find my projects, resume, and all my links below. Enjoy the stay, young one!</p>
+          <p>I&apos;m Ramsey, a senior at the University of Houston with a Fall 2026 graduation date. I&apos;m a full-stack developer. Outside of webdev, I like hiking, going to the gym, and playing video games! You can find my projects, resume, and all my links below. Enjoy the stay, young one!</p>
         </section>
         
         <section id="experience" className="neighbor fade-in fade-in-delay-2">
@@ -22,8 +22,7 @@ export default function Home() {
         <section id="projects" className="neighbor fade-in fade-in-delay-2">
           <h2>Projects</h2>
           <ul>
-            <li className="project-box"><a href="https://github.com/ramseywiz/theapp">Daily Planner</a> - A desktop app to help you structure your day. Built using C#, .NET, WPF, MVVM, 
-            with a backend built with ASP.NET & MySQL, hosted on Azure. Check it out!</li>
+            <li className="project-box"><a href="https://d2board.com">Destiny 2 Leaderboard</a> - A tool for Destiny 2 to easily compare stats across raids & dungeons. Developed using React, TypeScript, CSS, and a ASP.NET & MySQL backend. Check it out!</li>
             <li className="project-box"><a href="https://www.roblox.com/games/450756180/Uhtceare-Pre-Alpha">Uhtceare</a> – A game built on Roblox using Lua. 
             We made it to alpha build with over 2,000 purchases. A demo is available for play!</li>
           </ul>
@@ -43,7 +42,7 @@ export default function Home() {
               <span>ramchandoklow@gmail.com</span>
             </a>
 
-            <a href="/resume.pdf" className="contact-item" target="_blank" rel="noopener noreferrer" download>
+            <a href="/resume.pdf" className="contact-item" target="_blank" rel="noopener noreferrer">
               <img src="/resume.png" alt="Resume icon" className="contact-icon"/>
               <span>Ramsey&apos;s Resume</span>
             </a>
