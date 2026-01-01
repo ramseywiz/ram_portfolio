@@ -28,12 +28,15 @@ body {
 }
 
 .scroll-div {
-  width: 800px;
-  max-height: calc(100vh - 25vh);
+  width: min(800px, calc(100vw - 2rem));
+  max-height: calc(100svh - 10svh);
   height: auto;
-  margin: 5vh auto;
+  margin: 5svh auto;
   padding: 2rem;
+
   overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 
   background-image: url('/parch.png');
   background-repeat: repeat-y;
@@ -44,6 +47,14 @@ body {
   color: #6e3c15;
   box-shadow: inset 0 0 0 6px rgba(0,0,0,0.3);
 }
+
+.scroll-div p,
+.scroll-div li,
+.scroll-div a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .scroll-div h1,
 .scroll-div h2 {
   text-shadow: 1px 1px 0 #f5e1a8;
@@ -91,7 +102,6 @@ body {
   color: #7e5a27;
 }
 
-/* 1) row container */
 .scroll-div .contact-links {
   display: flex;
   justify-content: space-around;
@@ -99,7 +109,6 @@ body {
   margin-top: 1em;
 }
 
-/* 2) each icon+text link */
 .scroll-div .contact-links .contact-item {
   display: flex;
   align-items: center;
@@ -117,8 +126,19 @@ body {
   color: #a16b2d;
 }
 
-/* 3) icon sizing */
 .scroll-div .contact-links .contact-icon {
   width: 32px;
   height: 32px;
+}
+
+@media (max-width: 600px) {
+  .scroll-div { padding: 1rem; }
+  .scroll-div .contact-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+  .scroll-div .contact-links .contact-item {
+    justify-content: center;
+  }
 }
